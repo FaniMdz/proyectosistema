@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Registros</title>
+<meta charset="utf-8">
+<meta charset="author" content="Fani Melendez">
+<meta name="keywords" content="Programacion Web">  
+    
+   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+   <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+<style>
+body {
+  background-image:url('https://images.pexels.com/photos/3131634/pexels-photo-3131634.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+</style>
+<br>
+<br>
+<div id="card" class="card mb-0 offset-0" style="max-width: 800px;">
+        <center><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="96" height="96"viewBox="0 0 172 172"style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#1abc9c"><path d="M64.5,14.33333c-7.90483,0 -14.33333,6.4285 -14.33333,14.33333v86c0,7.90483 6.4285,14.33333 14.33333,14.33333h71.66667c7.90483,0 14.33333,-6.4285 14.33333,-14.33333v-71.31673l-28.68066,-29.0166zM114.66667,27.54688l22.47982,22.61979h-22.47982zM35.83333,43c-7.83362,0 -14.33333,6.49972 -14.33333,14.33333v86c0,7.85076 6.48258,14.33333 14.33333,14.33333h64.5c7.83362,0 14.33333,-6.49972 14.33333,-14.33333h-14.33333h-64.5v-86zM71.66667,64.5h57.33333v14.33333h-57.33333zM71.66667,93.16667h57.33333v14.33333h-57.33333z"></path></g></g></svg><h3 class="login-title" style="color: #000000">Vista de Registros</h3>
+                     <div class="panel panel-default">
+                     <div class="abs-center">
+                     <div class="panel-body">
+                     <div class="row">
+                     <div class="row no gutters">
+                     <div class="col-md-8"></div>
+                     <div class="col-md-8">
+                     <div class="card-body">
+    
+<div class="col-md-10 offset-3" >
+    <table class="table table-striped">
+        <table align="center" width="200%" cellspacing="1" cellpadding="1" border="3">
+    <tbody background="https://i.pinimg.com/originals/29/2d/dc/292ddcf1fdbcff99169b93d6507b59bf.jpg">
+
+        <tr>
+            <thead>
+                <th>Placa</th><th>Color</th><th>Nombre</th><th>Fecha</th><th>Hora Entrada</th> <th>Hora Salida</th> <th>Descripción</th>
+            </thead>
+            {% for autos in v_autos %}
+            <tbody>
+                <td>{{ autos.Id_auto }}</td><td>{{ autos.Id_color }}</td><td>{{ autos.Id_admin }}</td><td>{{ autos.fecha }}</td><td>{{ autos.horaE }}</td><td>{{ autos.horaS }}</td><td>{{ autos.descripcion }}</td>
+            </tbody>
+        {% endfor %}
+    </tr>
+    </table>
+</div>     
+</body>
+</html>

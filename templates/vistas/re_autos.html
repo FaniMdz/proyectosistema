@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registro Autos</title>
+  </head>
+  <body>
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+    <style>
+body {
+  background-image:url('https://images.pexels.com/photos/3131634/pexels-photo-3131634.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+</style>
+<br>
+<br>
+   <div id="card" class="card mb-1 offset-2" style="max-width: 500px;">
+        <center><h3 class="login-title" style="color: #000000">Registro Vehículos</h3>
+                     <div class="panel panel-default">
+                     <div class="abs-center">
+                     <div class="panel-body">
+                     <div class="row">
+                     <div class="row no gutters">
+                     <div class="col-md-12">
+                     <div class="card-body">
+        <img src="https://img.icons8.com/color/96/000000/car-rental.png"/>
+
+    </div>
+<div class="col-md-12 border">
+          <br>
+          <section class="d-flex justify-content-center p-0 mb-0">
+            <div style="width: 25rem">
+              <div class="form-outline">
+          <div class="input-group form-outline"><div class="input-group form-outline">
+                <div class="col-md-0">
+                           <label for="auto" class="form-label">Placa</label><img src="https://img.icons8.com/cotton/30/000000/security-pass.png"/>
+                            <input type="text" class="form-control" id="id_auto" placeholder="AEE-0236" readonly>
+                      </div>
+                    <div class="col-md-0">
+                        <label for="exampleInputEmail1" class="form-label">Persona</label><img src="https://img.icons8.com/color/30/000000/member-skin-type-7.png"/>
+                        <input type="text" class="form-control" id="id_auto" placeholder="Maestro" readonly>
+                    </div>  
+                  </div>
+                </div>    
+                <div class="col-md-0 offset-0">
+                    <label for="exampleInputEmail1" class="form-label">Fecha</label>
+                    <input type="date" class="form-control" id="fecha">
+                </div>  
+                <div class="col-md-0 offset-0">
+                    <div class="row">
+                        <div class="col-md-0">
+                            <label for="exampleInputEmail1" class="form-label">Hora entrada</label>
+                            <input type="time" class="form-control">
+                        </div>  
+                        <div class="col-md-0">
+                            <label for="exampleInputEmail1" class="form-label">Hora salida</label>
+                            <input type="time" class="form-control">
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="col-md-0 offset-0">
+                    <label for="exampleInputEmail1" class="form-label">Descripción</label> <img src="https://img.icons8.com/metro/23/000000/about.png"/>
+                    <input type="text" class="form-control" id="id_auto" placeholder="Auto toyota aveo, sin daños">
+                </div>  
+                <div class="col-md-0 offset-0">
+                    <label for="exampleInputEmail1" class="form-label">Dueño</label> <img src="https://img.icons8.com/doodle/23/000000/user-male--v1.png"/>
+                    <input type="text" class="form-control" id="id_auto" placeholder="Juanita Perez">
+                </div>  
+                <div class="col-md-0 offset-0">
+                    <label for="exampleInputEmail1" class="form-label">Teléfono</label> <img src="https://img.icons8.com/office/23/000000/iphone.png"/>
+                    <input type="text" class="form-control" id="id_auto" placeholder="555 555 55 55">
+                </div>  <br><br>
+                <div class="container-login100-form-btn m-t-32">
+            <center><button type="button" class="btn btn-info">Registrar</button>
+                </div>  <br><br>
+                </form>
+
+                <style>
+.abs-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10vh;
+}
+
+.form {
+  width: 30px;
+}
+</style>
+          </div>
+      </div>
+</body>
+</html>

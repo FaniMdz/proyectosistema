@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registro Personas</title>
+  </head>
+  <body>
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+   <style>
+body {
+  background-image:url('https://images.pexels.com/photos/3131634/pexels-photo-3131634.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+</style>
+<br>
+<br>
+   <div id="card" class="card mb-1 offset-2" style="max-width: 500px;">
+        <center><h3 class="login-title" style="color: #000000">Registro Persona</h3>
+                     <div class="panel panel-default">
+                      <div class="abs-center">
+                     <div class="panel-body">
+                     <div class="row">
+                          <div class="row no gutters">
+                        <div class="col-md-8"></div>
+                          <div class="col-md-8">
+                          <div class="card-body">
+
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="96" height="96"viewBox="0 0 172 172"style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M5.375,115.025c0.645,-17.845 15.265,-32.25 33.325,-32.25h25.8c18.06,0 32.68,14.405 33.325,32.25z" fill="#8bb7f0"></path><path d="M64.5,83.85c16.985,0 31.175,13.33 32.25,30.1h-90.3c1.075,-16.77 15.05,-30.1 32.25,-30.1h25.8M64.5,81.7h-25.8c-18.92,0 -34.4,15.48 -34.4,34.4h94.6c0,-18.92 -15.48,-34.4 -34.4,-34.4z" fill="#4e7ab5"></path><path d="M51.6,94.6c-12.685,0 -15.695,-7.525 -16.125,-8.385v-16.125h32.25v15.91c-0.43,1.29 -3.44,8.6 -16.125,8.6z" fill="#deb974"></path><path d="M66.65,70.95v15.05c-0.43,1.29 -3.655,7.525 -15.05,7.525c-11.395,0 -14.62,-6.235 -15.05,-7.525v-15.05h30.1M68.8,68.8h-34.4v17.415c0,0 2.795,9.46 17.2,9.46c14.405,0 17.2,-9.46 17.2,-9.46v-17.415z" fill="#967a44"></path><path d="M73.1,59.125c-4.085,0 -7.525,-3.44 -7.525,-7.525c0,-4.085 3.44,-7.525 7.525,-7.525c5.375,0 7.525,1.29 7.525,4.73c0,4.515 -3.655,10.32 -7.525,10.32zM30.1,59.125c-3.87,0 -7.525,-5.805 -7.525,-10.32c0,-3.44 2.15,-4.73 7.525,-4.73c4.085,0 7.525,3.44 7.525,7.525c0,4.085 -3.44,7.525 -7.525,7.525z" fill="#deb974"></path><path d="M73.1,45.15c6.02,0 6.45,1.72 6.45,3.655c0,3.87 -3.225,9.245 -6.45,9.245c-3.655,0 -6.45,-2.795 -6.45,-6.45c0,-3.655 2.795,-6.45 6.45,-6.45M30.1,45.15c3.655,0 6.45,2.795 6.45,6.45c0,3.655 -2.795,6.45 -6.45,6.45c-3.225,0 -6.45,-5.375 -6.45,-9.245c0,-1.935 0.43,-3.655 6.45,-3.655M73.1,43c-4.73,0 -8.6,3.87 -8.6,8.6c0,4.73 3.87,8.6 8.6,8.6c4.73,0 8.6,-6.665 8.6,-11.395c0,-4.73 -3.87,-5.805 -8.6,-5.805zM30.1,43c-4.73,0 -8.6,1.075 -8.6,5.805c0,4.73 3.87,11.395 8.6,11.395c4.73,0 8.6,-3.87 8.6,-8.6c0,-4.73 -3.87,-8.6 -8.6,-8.6z" fill="#967a44"></path><path d="M51.6,80.625c-1.935,0 -4.085,-0.86 -5.375,-2.58l-0.215,-0.215h-0.43c-11.18,-2.795 -18.92,-12.685 -18.92,-24.08v-22.575c0,-6.235 4.945,-11.18 11.18,-11.18h27.09c6.235,0 11.18,4.945 11.18,11.18v22.575c0,11.395 -7.74,21.285 -18.92,24.08h-0.43l-0.215,0.215c-0.86,1.72 -3.01,2.58 -4.945,2.58z" fill="#f5ce85"></path><path d="M65.145,21.07c5.59,0 10.105,4.515 10.105,10.105v22.575c0,10.965 -7.31,20.425 -18.06,23.005l-0.645,0.215l-0.43,0.43c-1.075,1.29 -2.795,2.15 -4.515,2.15c-1.72,0 -3.44,-0.86 -4.515,-2.15l-0.43,-0.645l-0.645,-0.215c-10.75,-2.365 -18.06,-11.825 -18.06,-22.79v-22.575c0,-5.59 4.515,-10.105 10.105,-10.105h27.09M65.145,18.92h-27.09c-6.88,0 -12.255,5.59 -12.255,12.255v22.575c0,12.04 8.385,22.36 19.565,24.94c1.505,1.72 3.655,3.01 6.235,3.01c2.58,0 4.73,-1.075 6.235,-3.01c11.18,-2.795 19.565,-12.9 19.565,-24.94v-22.575c0,-6.88 -5.59,-12.255 -12.255,-12.255z" fill="#967a44"></path><path d="M76.325,54.825v-7.525c0,-11.18 -11.18,-16.985 -11.61,-17.2l-0.645,-0.215l-0.43,0.215c0,0 -8.815,6.235 -23.005,6.235c-6.235,0 -13.76,3.44 -13.76,13.115v5.16h-0.215c-0.86,-3.01 -4.085,-15.265 -4.085,-24.51c0,-12.255 9.46,-24.725 27.52,-24.725c12.47,0 15.91,7.525 15.91,7.955l0.215,0.645h0.645c6.665,0 13.545,5.59 13.545,16.34c0,8.385 -3.225,21.07 -4.085,24.51z" fill="#a6714e"></path><path d="M50.095,6.45c11.825,0 14.835,6.88 15.05,7.31l0.645,1.29h1.505c6.235,0 12.47,5.375 12.47,15.265c0,4.945 -1.075,11.18 -2.15,16.34c-0.43,-11.395 -11.61,-17.415 -12.04,-17.63l-1.075,-0.645l-1.075,0.86c0,0 -8.6,6.02 -22.36,6.02c-6.88,0 -13.545,3.655 -14.62,12.04c-1.72,-4.945 -2.795,-11.61 -2.795,-17.2c0,-11.825 9.03,-23.65 26.445,-23.65M50.095,4.3c-18.06,0 -28.595,12.255 -28.595,25.8c0,10.965 4.3,25.8 4.3,25.8h2.15c0,0 0,-3.225 0,-6.235c0,-8.385 6.02,-12.04 12.685,-12.04c14.62,0 23.65,-6.45 23.65,-6.45c0,0 10.965,5.59 10.965,16.125c0,3.225 0,8.6 0,8.6h2.15c0,0 4.3,-15.48 4.3,-25.585c0,-11.395 -7.31,-17.415 -14.62,-17.415c0,0 -3.44,-8.6 -16.985,-8.6z" fill="#7a4f34"></path><path d="M39.775,140.825c0.645,-17.845 15.265,-32.25 33.325,-32.25h25.8c18.06,0 32.68,14.405 33.325,32.25z" fill="#c2e8ff"></path><path d="M98.9,109.65c16.985,0 31.175,13.33 32.25,30.1h-90.3c1.075,-16.77 15.05,-30.1 32.25,-30.1h25.8M98.9,107.5h-25.8c-18.92,0 -34.4,15.48 -34.4,34.4v0h94.6v0c0,-18.92 -15.48,-34.4 -34.4,-34.4z" fill="#7496c4"></path><path d="M86,120.4c-12.685,0 -15.695,-7.525 -16.125,-8.385v-16.125h32.25v15.91c-0.43,1.29 -3.44,8.6 -16.125,8.6z" fill="#ffdea3"></path><path d="M101.05,96.75v15.05c-0.43,1.29 -3.655,7.525 -15.05,7.525c-11.395,0 -14.62,-6.235 -15.05,-7.525v-15.05h30.1M103.2,94.6h-34.4v17.415c0,0 2.795,9.46 17.2,9.46c14.405,0 17.2,-9.46 17.2,-9.46v-17.415z" fill="#967a44"></path><g><path d="M107.5,84.925c-4.085,0 -7.525,-3.44 -7.525,-7.525c0,-4.085 3.44,-7.525 7.525,-7.525c5.375,0 7.525,1.29 7.525,4.73c0,4.515 -3.655,10.32 -7.525,10.32zM64.5,84.925c-3.87,0 -7.525,-5.805 -7.525,-10.32c0,-3.44 2.15,-4.73 7.525,-4.73c4.085,0 7.525,3.44 7.525,7.525c0,4.085 -3.44,7.525 -7.525,7.525z" fill="#ffdea3"></path><path d="M107.5,70.95c6.02,0 6.45,1.72 6.45,3.655c0,3.87 -3.225,9.245 -6.45,9.245c-3.655,0 -6.45,-2.795 -6.45,-6.45c0,-3.655 2.795,-6.45 6.45,-6.45M64.5,70.95c3.655,0 6.45,2.795 6.45,6.45c0,3.655 -2.795,6.45 -6.45,6.45c-3.225,0 -6.45,-5.375 -6.45,-9.245c0,-1.935 0.43,-3.655 6.45,-3.655M107.5,68.8c-4.73,0 -8.6,3.87 -8.6,8.6c0,4.73 3.87,8.6 8.6,8.6c4.73,0 8.6,-6.665 8.6,-11.395c0,-4.73 -3.87,-5.805 -8.6,-5.805zM64.5,68.8c-4.73,0 -8.6,1.075 -8.6,5.805c0,4.73 3.87,11.395 8.6,11.395c4.73,0 8.6,-3.87 8.6,-8.6c0,-4.73 -3.87,-8.6 -8.6,-8.6z" fill="#967a44"></path></g><g><path d="M86,106.425c-1.935,0 -3.87,-0.86 -5.375,-2.58l-0.215,-0.215h-0.43c-11.18,-2.795 -18.92,-12.685 -18.92,-24.08v-22.575c0,-6.235 4.945,-11.18 11.18,-11.18h27.09c6.235,0 11.18,4.945 11.18,11.18v22.575c0,11.395 -7.74,21.285 -18.92,24.08h-0.43l-0.215,0.215c-1.075,1.72 -3.01,2.58 -4.945,2.58z" fill="#ffdea3"></path><path d="M99.545,46.87c5.59,0 10.105,4.515 10.105,10.105v22.575c0,10.965 -7.31,20.425 -18.06,23.005l-0.645,0.215l-0.43,0.43c-1.075,1.29 -2.795,2.15 -4.515,2.15c-1.72,0 -3.44,-0.86 -4.515,-2.15l-0.43,-0.645l-0.645,-0.215c-10.75,-2.365 -18.06,-11.825 -18.06,-22.79v-22.575c0,-5.59 4.515,-10.105 10.105,-10.105h27.09M99.545,44.72h-27.09c-6.88,0 -12.255,5.59 -12.255,12.255v22.575c0,12.04 8.385,22.36 19.565,24.94c1.505,1.72 3.655,3.01 6.235,3.01c2.58,0 4.73,-1.075 6.235,-3.01c11.18,-2.795 19.565,-12.9 19.565,-24.94v-22.575c0,-6.88 -5.59,-12.255 -12.255,-12.255z" fill="#967a44"></path></g><g><path d="M110.725,80.625v-7.525c0,-11.18 -11.18,-16.985 -11.61,-17.2l-0.645,-0.215l-0.43,0.215c0,0 -8.815,6.235 -23.005,6.235c-6.235,0 -13.76,3.44 -13.76,13.115v5.16h-0.215c-0.86,-3.01 -4.085,-15.265 -4.085,-24.51c0,-12.255 9.46,-24.725 27.52,-24.725c12.47,0 15.91,7.525 15.91,7.955l0.215,0.645h0.645c6.665,0 13.545,5.59 13.545,16.34c0,8.385 -3.225,21.07 -4.085,24.51h0z" fill="#f5ce85"></path><path d="M84.495,32.25c11.825,0 14.835,6.88 15.05,7.31l0.645,1.29h1.505c6.235,0 12.47,5.375 12.47,15.265c0,4.945 -1.075,11.18 -2.15,16.34c-0.43,-11.395 -11.61,-17.415 -12.04,-17.63l-1.075,-0.645l-1.075,0.86c0,0 -8.6,6.02 -22.36,6.02c-6.88,0 -13.545,3.655 -14.62,12.04c-1.72,-4.945 -2.795,-11.61 -2.795,-17.2c0,-11.825 9.03,-23.65 26.445,-23.65M84.495,30.1c-18.06,0 -28.595,12.255 -28.595,25.8c0,10.965 4.3,25.8 4.3,25.8h2.15c0,0 0,-3.225 0,-6.235c0,-8.385 6.02,-12.04 12.685,-12.04c14.62,0 23.65,-6.45 23.65,-6.45c0,0 10.965,5.59 10.965,16.125c0,3.225 0,8.6 0,8.6h2.15c0,0 4.3,-15.48 4.3,-25.585c0,-11.395 -7.31,-17.415 -14.62,-17.415c0,0 -3.44,-8.6 -16.985,-8.6z" fill="#967a44"></path></g><g><path d="M133.3,170.925c-20.64,0 -37.625,-16.985 -37.625,-37.625c0,-20.64 16.985,-37.625 37.625,-37.625c20.64,0 37.625,16.985 37.625,37.625c0,20.64 -16.985,37.625 -37.625,37.625z" fill="#bae0bd"></path><path d="M133.3,96.75c20.21,0 36.55,16.34 36.55,36.55c0,20.21 -16.34,36.55 -36.55,36.55c-20.21,0 -36.55,-16.34 -36.55,-36.55c0,-20.21 16.34,-36.55 36.55,-36.55M133.3,94.6c-21.285,0 -38.7,17.415 -38.7,38.7c0,21.285 17.415,38.7 38.7,38.7c21.285,0 38.7,-17.415 38.7,-38.7c0,-21.285 -17.415,-38.7 -38.7,-38.7z" fill="#5e9c76"></path></g><path d="M129,111.8h8.6v43h-8.6z" fill="#ffffff"></path><path d="M111.8,129h43v8.6h-43z" fill="#ffffff"></path></g></g></svg></center>
+
+<div class="col-md-12 border">
+          <br>
+          <section class="d-flex justify-content-center p-4 mb-4">
+            <div style="width: 23rem">
+              <div class="form-outline">
+          <div class="input-group form-outline"><div class="input-group form-outline">
+          <img src="https://img.icons8.com/color/48/000000/car-roof-box.png"/>
+          <br>
+          <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2"placeholder="AE-03-00"/><img src="https://img.icons8.com/fluent/48/000000/color-mode.png"/><input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2"placeholder="Maestro"/>
+          <div class="form-notch"><div class="form-notch-leading"></div><div class="form-notch-middle" style="width:400px;"></div><div class="form-notch-trailing"></div></div></div>
+          <div class="form-notch-leading"></div><div class="form-notch-middle" style="width:400px;"></div><div class="form-notch-trailing"></div></div></div>
+                    <br>
+        <div class="form-outline">
+                <div class="input-group form-outline">
+               <span class="input-group-text" id="inputGroupPrepend2">Nombre:</span>
+                <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" placeholder="Lupita"/>
+                <div class="form-notch"><div class="form-notch-leading"></div><div class="form-notch-middle" style="width:300px;"></div><div class="form-notch-trailing"></div></div></div>
+                <br>
+          <div class="wrap-input100 validate-input" data-validate="Enter password">
+          <div class="form-outline">
+                    <div class="input-group form-outline">
+                    <span class="input-group-text" id="inputGroupPrepend2">Ap_Paterno:</span>
+                    <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" placeholder="Hernandez"/>
+                    <div class="form-notch"><div class="form-notch-leading"></div><div class="form-notch-middle" style="width:300px;"></div><div class="form-notch-trailing"></div></div></div>
+                <br>
+                  <div class="wrap-input100 validate-input" data-validate="Enter password">
+          <div class="form-outline">
+                    <div class="input-group form-outline">
+                    <span class="input-group-text" id="inputGroupPrepend2">Ap_Materno:</span>
+                    <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" placeholder="Garcia"/>
+                    <div class="form-notch"><div class="form-notch-leading"></div><div class="form-notch-middle" style="width:300px;"></div><div class="form-notch-trailing"></div></div></div>
+                <br>
+                  <div class="wrap-input100 validate-input" data-validate="Enter password">
+          <div class="form-outline">
+                    <div class="input-group form-outline">
+                    <span class="input-group-text" id="inputGroupPrepend2">Telefono:</span>
+                    <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" placeholder="465 101 10 10"/>
+                    <div class="form-notch"><div class="form-notch-leading"></div><div class="form-notch-middle" style="width:300px;"></div><div class="form-notch-trailing"></div></div></div>
+                <br>
+          <div class="container-login100-form-btn m-t-32">
+            <center><button type="button" class="btn btn-info">Registrar</button>
+                                   </span>
+                                </div>
+                              </div>
+                           </div>
+                       </div>
+                    </div>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <style>
+.abs-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10vh;
+}
+
+.form {
+  width: 30px;
+}
+
+</style>
+</body>
+</html>
